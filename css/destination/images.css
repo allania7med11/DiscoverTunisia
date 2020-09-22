@@ -1,0 +1,13 @@
+.images{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images img{
+    min-width: 200px;
+    max-height: 200px;
+    width: 25%;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
