@@ -1,9 +1,22 @@
 @import './destination/container.css';
 @import './destination/hr.css';
 @import './destination/images.css';
+@import './destination/sidenav.css';
+@import './destination/nav.css';
+html {
+	scroll-behavior: smooth;
+}
+.title{
+    margin-top: 70px;
+    text-align: center;
+}
 
+body {
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+  }
 section{
-    margin-top: 30px;
+    padding-top: 70px;
 }
 h1{
     padding-left: 10px;

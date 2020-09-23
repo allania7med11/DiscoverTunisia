@@ -1,5 +1,4 @@
 .container {
-  text-align: center;
   display: grid;
   height: 100vh;
   grid-template-rows:2fr 6fr;
@@ -17,6 +16,8 @@
 .menu {
   grid-area: menu;
   margin: 0;
+  padding:0;
+  background-color: #111;
 }
 
 .main {
