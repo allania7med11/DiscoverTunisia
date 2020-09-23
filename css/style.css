@@ -1,6 +1,7 @@
-@import './style/cards.css';
-@import './style/container.css';
+@import "./style/cards.css";
+@import "./style/container.css";
 
 body {
-    font-family: "Lato", sans-serif;
-  }
+  font-family: "Lato", sans-serif;
+  
+}
