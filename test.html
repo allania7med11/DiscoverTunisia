@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #openSideNav{
+            display:none;
+        }
+        #SideNav{
+            display:none;
+        }
+        input[type="checkbox"]:checked ~ #SideNav {
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="openSideNav">
+    <label for="openSideNav" class="IconToggle">
+        <img src="images/icons/list-24px.svg">
+    </label>
+    <div id="SideNav">
+        Show
+    </div>
+</body>
+</html>

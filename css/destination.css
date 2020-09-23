@@ -3,6 +3,7 @@
 @import './destination/images.css';
 @import './destination/sidenav.css';
 @import './destination/nav.css';
+@import './destination/checkbox.css';
 html {
 	scroll-behavior: smooth;
 }
