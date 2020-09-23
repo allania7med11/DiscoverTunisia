@@ -14,13 +14,22 @@
         input[type="checkbox"]:checked ~ #SideNav {
             display:block;
         }
+        .IconToggle{
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url("images/icons/list-24px.svg");
+        }
+        input[type="checkbox"]:checked ~ .IconToggle {
+            display:block;
+            background-image: url("images/icons/close-24px.svg");
+        }
 
     </style>
 </head>
 <body>
     <input type="checkbox" id="openSideNav">
     <label for="openSideNav" class="IconToggle">
-        <img src="images/icons/list-24px.svg">
     </label>
     <div id="SideNav">
         Show
