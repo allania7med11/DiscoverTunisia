@@ -1,26 +1,16 @@
 .container {
   display: grid;
   height: 100vh;
-  grid-template-rows:2fr 6fr;
-  grid-template-columns:1fr 6fr;
-  grid-template-areas:
-    "header header"
-    "menu main";
+  grid-template-rows:6fr;
+  grid-template-columns:6fr;
+  grid-template-areas:"main";
 }
 .box{
     border: 1px solid black;
-}
-.header {
-  grid-area: header;
-}
-.menu {
-  grid-area: menu;
-  margin: 0;
-  padding:0;
-  background-color: #111;
 }
 
 .main {
   grid-area: main;
   padding-bottom: 250px;
+  transition: margin-left .5s;
 }

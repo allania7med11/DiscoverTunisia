@@ -1,9 +1,7 @@
 @import './destination/container.css';
 @import './destination/hr.css';
 @import './destination/images.css';
-@import './destination/sidenav.css';
 @import './destination/nav.css';
-@import './destination/checkbox.css';
 html {
 	scroll-behavior: smooth;
 }
@@ -15,6 +13,8 @@ html {
 body {
     font-family: "Lato", sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
   }
 section{
     padding-top: 70px;

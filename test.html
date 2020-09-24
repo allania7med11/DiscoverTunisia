@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #openSideNav{
-            display:none;
-        }
-        #SideNav{
-            display:none;
-        }
-        input[type="checkbox"]:checked ~ #SideNav {
-            display:block;
-        }
-        .IconToggle{
-            display: inline-block;
-            width: 22px;
-            height: 22px;
-            background-image: url("images/icons/list-24px.svg");
-        }
-        input[type="checkbox"]:checked ~ .IconToggle {
-            display:block;
-            background-image: url("images/icons/close-24px.svg");
+        .sidenav {
+            background-color: #111;
+            width: 15%;
+            padding: 0;
+            position: fixed;
+            top: 60px;
+            height: 100%;
         }
 
+        .sidenav a {
+            padding: 16px 8px 16px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #818181;
+            display: block;
+
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        #openSideNav {
+            display: none;
+        }
+
+        .nav {
+            position: fixed;
+            background-color: #111;
+            height: 60px;
+            width: 100%
+        }
+
+        .sidenav {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked~.sidenav {
+            display: inline-block;
+        }
+
+        .IconToggle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("images/icons/format-list-bulleted-square.png");
+            position: fixed;
+            top: 20px;
+            left: 20px
+        }
+
+        input[type="checkbox"]:checked~.IconToggle {
+            background-image: url("images/icons/close.png");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
+
 <body>
-    <input type="checkbox" id="openSideNav">
-    <label for="openSideNav" class="IconToggle">
-    </label>
-    <div id="SideNav">
-        Show
+    <div class="container">
+        <div class="nav"></div>
+        <input type="checkbox" id="openSideNav">
+        <label for="openSideNav" class="IconToggle">
+        </label>
+        <div class="sidenav">
+            <a href="#Introduction">Introduction</a>
+            <a href="#Ras-Rmel">Ras Rmel</a>
+            <a href="#Guellala">Guellala</a>
+            <a href="#Djerba-Explore">Djerba Explore</a>
+        </div>
     </div>
 </body>
+
 </html>
