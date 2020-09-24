@@ -3,7 +3,9 @@
   height: 100vh;
   grid-template-rows:6fr;
   grid-template-columns:6fr;
-  grid-template-areas:"main";
+  grid-template-areas:
+    "main"
+    "footer";
 }
 .box{
     border: 1px solid black;
@@ -13,6 +15,13 @@
   grid-area: main;
   padding-bottom: 250px;
   transition: margin-left .5s;
+}
+.footer {
+  text-align: center;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+  z-index: 100;
 }
 
 @media screen and (min-width: 768px) {
@@ -26,3 +35,4 @@
     opacity: 0.4;
   }
 }
+

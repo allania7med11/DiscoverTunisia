@@ -2,10 +2,11 @@
   text-align: center;
   display: grid;
   height: 100vh;
-  grid-template-rows:2fr 6fr;
+  grid-template-rows:2fr 6fr 1fr;
   grid-template-areas:
     "header"
-    "main";
+    "main"
+    "footer";
 }
 .box{
     border: 1px solid black;
@@ -16,4 +17,9 @@
 }
 .main {
   grid-area: main;
+}
+.footer {
+  grid-area: footer;
+  background-color: #111;
+  color: white;
 }
