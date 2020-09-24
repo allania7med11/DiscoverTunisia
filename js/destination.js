@@ -17,11 +17,9 @@ main.onclick = function(event) {
     }
   }
 };
-console.log("gggg")
 var body=document.body
 window.onload = function(){
   var max=maxWidth()
-  console.log({max})
   if(max>=768){
     openSideNav.checked = true;
   } else {
