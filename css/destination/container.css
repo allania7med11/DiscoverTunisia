@@ -14,3 +14,15 @@
   padding-bottom: 250px;
   transition: margin-left .5s;
 }
+
+@media screen and (min-width: 768px) {
+  input[type="checkbox"]:checked ~ .main {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  input[type="checkbox"]:checked ~ .main {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    opacity: 0.4;
+  }
+}
