@@ -2,6 +2,7 @@
 @import './destination/hr.css';
 @import './destination/images.css';
 @import './destination/nav.css';
+@import './destination/dropdown.css';
 html {
 	scroll-behavior: smooth;
 }

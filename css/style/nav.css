@@ -1,13 +1,4 @@
-.sidenav {
-  background-color: #111;
-  width: 15%;
-  padding: 0;
-  position: fixed;
-  top: 60px;
-  height: 100%;
-}
-
-.sidenav a,.nav a {
+.nav a {
   text-align: start;
   white-space: nowrap;
   padding: 16px 8px 16px 8px;
@@ -17,12 +8,12 @@
   display: block;
 }
 
-.sidenav a:hover,.nav a:hover {
+.nav a:hover {
   color: white;
 }
 #navbar-brand{
   text-transform: capitalize;
-  color: darkgray;
+  color: gainsboro;
   font-family: "Grenze Gotisch";
   white-space: nowrap;
   padding: 10px 8px 16px 8px;
@@ -34,9 +25,7 @@
 #navbar-brand:hover{
   color: white;
 }
-#openSideNav {
-  display: none;
-}
+
 
 .nav {
   display: flex;
@@ -47,34 +36,6 @@
   width: 100%;
   padding-left: 50px;
   padding-bottom: 10px;
-}
-
-.sidenav {
-  overflow-x: hidden;
-  width: 0px;
-  transition: .5s;
-  z-index: 10;
-}
-
-input[type="checkbox"]:checked ~ .sidenav {
-  width: 200px;
-}
-
-
-
-.IconToggle {
-  background-color: #111;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("/images/icons/format-list-bulleted-square.png");
-  position: fixed;
-  top: 10px;
-  left: 20px;
-}
-
-input[type="checkbox"]:checked ~ .IconToggle {
-  background-image: url("/images/icons/close.png");
 }
 @media screen and (max-width: 768px) {
   .nav a {
@@ -87,3 +48,11 @@ input[type="checkbox"]:checked ~ .IconToggle {
     font-size: 20px;
   }
 }
+
+
+
+
+
+
+
+
