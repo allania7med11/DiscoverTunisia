@@ -11,7 +11,8 @@ var main = document.getElementById("main");
 var sidenav = document.getElementById("sidenav");
 var openSideNav = document.getElementById("openSideNav");
 main.onclick = function(event) {
-  if (openSideNav.checked) {
+  var max=maxWidth()
+  if (openSideNav.checked && max<768) {
     if (!sidenav.contains(event.target)) {
       openSideNav.checked = false;
     }
