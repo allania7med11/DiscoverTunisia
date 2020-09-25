@@ -17,7 +17,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url('/images/icons/menu-down.png');
+    background-image: url('../../images/icons/menu-down.png');
     background-size:contain;
     opacity: 0.5;
 }

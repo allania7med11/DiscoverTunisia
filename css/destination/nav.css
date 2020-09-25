@@ -67,14 +67,14 @@ input[type="checkbox"]:checked ~ .sidenav {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("/images/icons/format-list-bulleted-square.png");
+  background-image: url("../../images/icons/format-list-bulleted-square.png");
   position: fixed;
   top: 10px;
   left: 20px;
 }
 
 input[type="checkbox"]:checked ~ .IconToggle {
-  background-image: url("/images/icons/close.png");
+  background-image: url("../../images/icons/close.png");
 }
 @media screen and (max-width: 768px) {
   .nav a {
