@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#openSocial {
+  display: none;
+}
+.sms {
+  overflow: hidden;
+  height: 0px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#openSocial:checked ~ .social .sms {
+  height: 150px;
+}
+.social {
+  overflow: hidden;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  width:50px;
+  right: 10px;
+  background-color: white;
+  border: black 1px solid;
+  z-index: 10;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#openSocial:checked ~ .social{
+    width:175px;
+}
+.social:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.social label {
+  cursor: pointer;
+  padding: 10px 30px 10px 20px;
+  width: 100%;
+  letter-spacing: 5px;
+  background-image: url("../../images/icons/share-outline.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.share {
+  display: none;
+}
+#openSocial:checked ~ .social label .share {
+    display: inline;
+  }
+#openSocial:checked ~ .social label {
+  background-image: url("../../images/icons/close-24px.svg");
+  background-position: 90% 50%;
+}
+.sm {
+  height: 50px;
+  display: flex;
+  padding: 10px 30px 10px 20px;
+  align-items: center;
+}
+.facebook {
+  color: #475993;
+}
+.facebook span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icons/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.twitter {
+  color: #3cbbf7;
+}
+.twitter span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icons/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.linkedin {
+  color: #106fb1;
+}
+.linkedin span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icons/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

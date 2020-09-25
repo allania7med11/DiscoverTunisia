@@ -4,6 +4,7 @@
 @import './destination/nav.css';
 @import './destination/dropdown.css';
 @import './destination/cards.css';
+@import './destination/social.css';
 html {
 	scroll-behavior: smooth;
 }
