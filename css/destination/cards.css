@@ -1,0 +1,43 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 70%;
+  margin: 10px;
+  border-radius: 25px;
+}
+.card div {
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card img {
+  float: left;
+  margin: 5px;
+  border-radius: 50%;
+  padding: 10px;
+  max-width:170px;
+  max-height:170px;
+}
+.img{
+  text-align: center;
+}
+.about {
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .card{
+    width: 90%;
+  }
+  .card img {
+    float: none;
+    margin: auto;
+  }
+}

@@ -3,6 +3,7 @@
 @import './destination/images.css';
 @import './destination/nav.css';
 @import './destination/dropdown.css';
+@import './destination/cards.css';
 html {
 	scroll-behavior: smooth;
 }
