@@ -1,0 +1,33 @@
+.responsive {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+}
+
+.centered {
+    text-align: center;
+    color: white;
+    font-family: "Verdana, sans-serif";
+    font-size: 38px;
+    white-space: nowrap;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered img {
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.centered img:hover {
+    opacity: 1;
+}
+
+
+.landing {
+    position: relative;
+}
