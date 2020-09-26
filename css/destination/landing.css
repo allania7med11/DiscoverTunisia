@@ -16,6 +16,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 768px) {
+    .centered {
+      font-size: 28px;
+    }
+  }
 
 .centered img {
     cursor: pointer;
