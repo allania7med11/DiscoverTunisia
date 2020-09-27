@@ -3,10 +3,16 @@
   padding: 16px 8px 16px 8px;
   font-size: 24px;
   font-weight: bold;
-  color: gainsboro;
+  color: azure;
   display: block;
 }
 .dropdown:hover{
+  color: white;
+}
+#page{
+  color: azure;
+}
+#page:hover{
   color: white;
 }
 .arrow{
@@ -19,13 +25,14 @@
   height: 24px;
   background-image: url('../../images/icons/menu-down.png');
   background-size:contain;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .dropdown:hover .arrow{
     opacity: 1;
 }
 .dropdown-content {
   padding-top: 20px;
+  padding-left: 10px;
   background-color: #111;
   display: none;
   position: absolute;
