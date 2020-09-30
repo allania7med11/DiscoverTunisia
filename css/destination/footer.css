@@ -126,7 +126,9 @@
 }
 
 .footer .sms ul {
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 .footer .sms ul li {
