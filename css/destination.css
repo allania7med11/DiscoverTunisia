@@ -1,37 +1,39 @@
-@import './destination/container.css';
-@import './destination/hr.css';
-@import './destination/images.css';
-@import './destination/nav.css';
-@import './destination/dropdown.css';
-@import './destination/cards.css';
-@import './destination/social.css';
-@import './destination/landing.css';
+@import "./destination/container.css";
+@import "./destination/hr.css";
+@import "./destination/images.css";
+@import "./destination/nav.css";
+@import "./destination/dropdown.css";
+@import "./destination/cards.css";
+@import "./destination/social.css";
+@import "./destination/landing.css";
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-.title{
-    margin-top: 70px;
-    text-align: center;
+.title {
+  margin-top: 70px;
+  text-align: center;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-  }
-section{
-    padding-top: 70px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
 }
-h1{
-    padding-left: 10px;
+section {
+  padding-top: 70px;
 }
-h2{
-    padding-left: 30px;
-    margin-bottom: 0;
+h1 {
+  padding-left: 10px;
 }
-p{
-    padding-left: 50px;
-    padding-right: 20px;
-    margin-top: 20px;
+h2 {
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+p {
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-top: 20px;
 }

@@ -54,6 +54,7 @@
 }
 .share {
   display: none;
+  color: black;
 }
 #openSocial:checked ~ .social label .share {
     display: inline;
