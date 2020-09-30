@@ -14,7 +14,7 @@
 }
 .main {
   grid-area: main;
-  padding-bottom: 150px;
+  padding-bottom: 110px;
   transition: margin 0.5s;
 }
 .footer {
