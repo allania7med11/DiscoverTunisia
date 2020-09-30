@@ -1,7 +1,6 @@
 .container {
   text-align: center;
   display: grid;
-  height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
@@ -11,13 +10,15 @@
 
 .header {
   grid-area: header;
-  margin-top: 60px;
 }
 .main {
   grid-area: main;
+  padding-bottom: 110px;
 }
 .footer {
+  text-align: center;
   grid-area: footer;
   background-color: #111;
   color: white;
+  z-index: 100;
 }

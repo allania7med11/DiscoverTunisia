@@ -4,7 +4,12 @@
 @import "./style/dropdown.css";
 @import "./destination/landing.css";
 @import "./destination/hr.css";
+@import "./destination/footer.css";
 
+
+.landing{
+  background-image: url("../images/landing.jpg");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +29,7 @@ h3 {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   margin: 0;
@@ -35,7 +41,7 @@ section {
   padding-top: 60px;
   margin: 10px 20px;
 }
-img {
+.card img {
   height: 200px;
 }
 .pr{
