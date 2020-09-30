@@ -8,7 +8,7 @@
 #openSocial {
   display: none;
 }
-.sms {
+.social .sms {
   overflow: hidden;
   height: 0px;
   transition: 0.5s;
@@ -24,7 +24,7 @@
   cursor: pointer;
   position: fixed;
   top: 10px;
-  width:50px;
+  width: 50px;
   right: 10px;
   background-color: white;
   border: black 1px solid;
@@ -37,8 +37,8 @@
   font-size: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-#openSocial:checked ~ .social{
-    width:175px;
+#openSocial:checked ~ .social {
+  width: 175px;
 }
 .social:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -52,27 +52,27 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.share {
+.social .share {
   display: none;
   color: black;
 }
 #openSocial:checked ~ .social label .share {
-    display: inline;
-  }
+  display: inline;
+}
 #openSocial:checked ~ .social label {
   background-image: url("../../images/icons/close-24px.svg");
   background-position: 90% 50%;
 }
-.sm {
+.social .sm {
   height: 50px;
   display: flex;
   padding: 10px 30px 10px 20px;
   align-items: center;
 }
-.facebook {
+.social .facebook {
   color: #475993;
 }
-.facebook span {
+.social .facebook span {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -80,10 +80,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.twitter {
+.social .twitter {
   color: #3cbbf7;
 }
-.twitter span {
+.social .twitter span {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -91,10 +91,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.linkedin {
+.social .linkedin {
   color: #106fb1;
 }
-.linkedin span {
+.social .linkedin span {
   display: inline-block;
   width: 24px;
   height: 24px;

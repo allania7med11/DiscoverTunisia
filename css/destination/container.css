@@ -1,4 +1,5 @@
 .container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -15,7 +16,7 @@
 .main {
   grid-area: main;
   padding-bottom: 150px;
-  transition: margin-left 0.5s;
+  transition: margin 0.5s;
 }
 .footer {
   text-align: center;

@@ -6,6 +6,7 @@
 @import "./destination/cards.css";
 @import "./destination/social.css";
 @import "./destination/landing.css";
+@import "./destination/footer.css";
 html {
   scroll-behavior: smooth;
 }

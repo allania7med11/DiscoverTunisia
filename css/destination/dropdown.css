@@ -31,8 +31,7 @@
     opacity: 1;
 }
 .dropdown-content {
-  padding-top: 20px;
-  padding-left: 10px;
+  padding: 20px;
   background-color: #111;
   display: none;
   position: absolute;

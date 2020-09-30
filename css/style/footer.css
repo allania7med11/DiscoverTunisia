@@ -1,0 +1,146 @@
+.footer .brand {
+    text-transform: capitalize;
+    font-family: "Grenze Gotisch";
+    white-space: nowrap;
+    padding: 10px 8px 16px 8px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.footer {
+    width: 100vw;
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 50px;
+    grid-template-areas:
+        "infos name social"
+        "rights rights rights";
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        width: 100vw;
+        background-color: #111;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 125px 125px 50px;
+        grid-template-areas:
+            "infos""name""social""rights";
+    }
+
+    .footer .sms ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .info {
+        text-align: center;
+    }
+
+    .footer .ft-center {
+        align-items: center;
+    }
+
+}
+
+.footer .box {
+    padding: 10px;
+}
+
+.footer .infos {
+    grid-area: infos;
+}
+
+.footer .name {
+    grid-area: name;
+}
+
+.footer .rights {
+    grid-area: rights;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer .info {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 16px;
+}
+
+.footer .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer .mail .icon {
+    background-image: url("../images/icons/mail.png");
+}
+
+.footer .phone .icon {
+    background-image: url("../images/icons/phone.png");
+}
+
+
+.footer .heading {
+    font-size: 24px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    padding: 8px 8px 8px 8px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer .name {
+    text-align: center;
+}
+
+.footer .name img {
+    width: 50px;
+}
+
+.footer .social .icon {
+    background-image: url("../../images/icons/share-white.png");
+}
+
+.footer .facebook .icon {
+    background-color: white;
+    background-image: url("../../images/icons/facebook.svg");
+}
+
+.footer .twitter .icon {
+    background-image: url("../../images/icons/twitter.svg");
+}
+
+.footer .linkedin .icon {
+    background-image: url("../../images/icons/linkedin.svg");
+}
+
+.footer .sms ul {
+    display: flex;
+}
+
+.footer .sms ul li {
+    padding: 16px;
+    display: flex;
+}
+.footer .rights a {
+    text-decoration: underline;
+}
+.footer .ft-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer .name .ft-center{
+    align-items: center;
+}
