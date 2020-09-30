@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Grenze Gotisch">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .footer .brand {
+            text-transform: capitalize;
+            font-family: "Grenze Gotisch";
+            white-space: nowrap;
+            padding: 10px 8px 16px 8px;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .footer {
+            width: 100vw;
+            background-color: #111;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 50px;
+            grid-template-areas:
+                "infos name social"
+                "rights rights rights";
+        }
+
+        @media screen and (max-width: 600px) {
+            .footer {
+                text-align: center;
+                width: 100vw;
+                background-color: #111;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 150px 125px 125px 50px;
+                grid-template-areas:
+                    "infos""name""social""rights";
+            }
+
+            .footer .sms ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer .info {
+                text-align: center;
+            }
+
+            .footer .ft-center {
+                align-items: center;
+            }
+
+        }
+
+        .footer .box {
+            padding: 10px;
+        }
+
+        .footer .infos {
+            grid-area: infos;
+        }
+
+        .footer .name {
+            grid-area: name;
+        }
+
+        .footer .rights {
+            grid-area: rights;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer .info {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 8px 16px;
+        }
+
+        .footer .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .footer .mail .icon {
+            background-image: url("../images/icons/mail.png");
+        }
+
+        .footer .phone .icon {
+            background-image: url("../images/icons/phone.png");
+        }
+
+
+        .footer .heading {
+            font-size: 24px;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: bold;
+            padding: 8px 8px 8px 8px;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer .name {
+            text-align: center;
+        }
+
+        .footer .name img {
+            width: 50px;
+        }
+
+        .footer .social .icon {
+            background-image: url("../../images/icons/share-white.png");
+        }
+
+        .footer .facebook .icon {
+            background-color: white;
+            background-image: url("../../images/icons/facebook.svg");
+        }
+
+        .footer .twitter .icon {
+            background-image: url("../../images/icons/twitter.svg");
+        }
+
+        .footer .linkedin .icon {
+            background-image: url("../../images/icons/linkedin.svg");
+        }
+
+        .footer .sms ul {
+            display: flex;
+        }
+
+        .footer .sms ul li {
+            padding: 16px;
+            display: flex;
+        }
+        .footer .rights a {
+            text-decoration: underline;
+        }
+        .footer .ft-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .footer .name .ft-center{
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="infos box">
+            <div class="ft-center">
+                <div class="heading">CONTACT</div>
+                <div class="info mail">
+                    <span class="icon"></span>&nbsp;allania7med11@gmail.com
+                </div>
+                <div class="info phone">
+                    <span class="icon"></span>&nbsp;+21629667239
+                </div>
+            </div>
+        </div>
+        <div class="name box">
+            <div class="ft-center">
+                <a class="brand" href="../index.html">discovertunisia</a>
+                <img src="../images/tunisia.png">
+            </div>
+        </div>
+        <div class="social box">
+            <div class="ft-center">
+                <div class="heading">SHARE&nbsp;<span class="icon"></span></div>
+                <div class="sms">
+                    <ul>
+                        <li>
+
+                            <a class="sm facebook" target="_blank"
+                                href="http://www.facebook.com/sharer.php?p[title]=Welcome to Tabarka&u=https://allania7med11.github.io/discovertunisia/tabarka.html">
+                                <span class="icon"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sm twitter" target="_blank"
+                                href="http://twitter.com/share?text=Welcome to Tabarka&url=https://allania7med11.github.io/discovertunisia/tabarka.html"><span
+                                    class="icon"></span></a>
+                        </li>
+                        <li>
+                            <a class="sm linkedin" target="_blank"
+                                href="https://www.linkedin.com/shareArticle?mini=true&title=Welcome to Tabarka&url=https://allania7med11.github.io/discovertunisia/tabarka.html">
+                                <span class="icon"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rights box">
+            &copy; Copyright 2020
+            <a target="_blank" href="https://allania7med11.github.io/discovertunisia/">
+                discovertunisia</a>
+        </div>
+    </footer>
+</body>
+
+</html>
