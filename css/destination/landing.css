@@ -1,45 +1,55 @@
 .responsive {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
 }
 
 .centered {
-    text-align: center;
-    color: white;
-    font-family: "Sansita Swashed";
-    font-size: 38px;
-    white-space: nowrap;
-    font-weight: bolder;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Sansita Swashed";
+  font-size: 38px;
+  white-space: nowrap;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 640px) {
-    .centered {
-      font-size: 24px;
-    }
-    .centered img{
-        width: 24px;
-        height: 24px;
-    }
+  .centered {
+    font-size: 24px;
   }
+  .centered img {
+    width: 24px;
+    height: 24px;
+  }
+}
 
 .centered img {
-    cursor: pointer;
-    opacity: 0.7;
-    margin-top: 5px;
-    width: 38px;
-    height: 38px;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-top: 5px;
+  width: 38px;
+  height: 38px;
 }
 
 .centered img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .landing {
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/tabarka/landing.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 75vw;
+  max-height: 100vh;
+  transition: 0.5s;
+}
+@media screen and (min-width: 768px) {
+  input[type="checkbox"]:checked ~ .header .landing {
+    width: calc(100vw - 200px);
+  }
 }
